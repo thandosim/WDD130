@@ -1,4 +1,8 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 nav {
   background-color: steelblue;
   padding: 10px;
@@ -21,6 +25,7 @@ h1 {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 main {
@@ -29,12 +34,14 @@ main {
 
 aside {
   width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
-  padding: 1rem;
-  background-color: #8cc0ee;
-  color: black;
   text-align: center;
+  position: relative;
+}
+
+aside h2 {
+  position: absolute;
+  top: 28px;
+  left: 100px;
 }
 
 aside img {
@@ -43,11 +50,21 @@ aside img {
 }
 
 p {
-    padding: 0;
+    padding: 10px;/*ive made the padding here to be 10 from 0 becase the img shadow was too close to the text*/
   }
   
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */;
+  padding: 1rem;
+  background-color: #8cc0ee;
+  color: #000;
 }

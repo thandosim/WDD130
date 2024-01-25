@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Exo+2&display=swap');
+
+:root {
+    --primary-color: #0f7173;
+    --secondary-color: #71a9f7;
+    --accent1-color: #d4f2d2;
+    --accent2-color: #fdfffc;
+    --heading-font: 'montserrat', sans-serif;
+    --paragraph-font: 'montserrat', sans-serif;
+    --nav-background-color: #71a9f7;
+    --nav-link-color: #0f7173;
+    --nav-hover-link-color: #d4f2d2;
+    --nav-hover-background-color: #fdfffc;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center ;
+  }
+
+  p {
+    padding: 25px;
+  }
+    
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+  }
+
+nav {
+    font-size: 1.2rem;
+    display: flex;
+  }
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 1000px;
+    padding: 20px;
+  }
+
+div {
+    position: relative;
+}
+
+div h1 {
+    background-color: var(--nav-background-color);
+    opacity: 0.8;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-shadow: -1px 0 black, 0 1px white, 1px 0 black, 0 -1px black;
+  }
+
+div article {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    color: var(--accent1-color);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+  }
+
+article img {
+    width: 150px;
+    height: auto;
+    float: right;
+}
+

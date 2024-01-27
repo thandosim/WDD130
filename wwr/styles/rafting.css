@@ -20,7 +20,7 @@
   }
 
   p {
-    padding: 25px;
+    padding: 15px;
   }
     
 nav a {
@@ -53,6 +53,13 @@ div h1 {
     text-shadow: -1px 0 black, 0 1px white, 1px 0 black, 0 -1px black;
   }
 
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+
 div article {
     position: absolute;
     bottom: 0px;
@@ -62,7 +69,7 @@ div article {
     
   }
 
-article img {
+.insert img {
     width: 150px;
     height: auto;
     float: right;

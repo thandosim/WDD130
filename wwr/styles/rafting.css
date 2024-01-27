@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Exo+2&display=swap');
 
 :root {
-    --primary-color: #0f7173;
+    --primary-color: #015356;
     --secondary-color: #71a9f7;
-    --accent1-color: #d4f2d2;
+    --accent1-color: #F0F5EF;
     --accent2-color: #fdfffc;
     --heading-font: 'montserrat', sans-serif;
     --paragraph-font: 'montserrat', sans-serif;
@@ -45,7 +45,7 @@ div {
 }
 
 div h1 {
-    background-color: var(--nav-background-color);
+    background-color: var(--accent1-color);
     opacity: 0.8;
     position: absolute;
     bottom: 100px;

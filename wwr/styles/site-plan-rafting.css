@@ -2,18 +2,18 @@
 
 
 :root {
-    --primary-color: #0f7173;
-    --secondary-color: #71a9f7;
-    --accent1-color: #d4f2d2;
-    --accent2-color: #fdfffc;
+  --primary-color: #015356;
+  --secondary-color: #71a9f7;
+  --accent1-color: #F0F5EF;
+  --accent2-color: #fdfffc;
+
+  --heading-font: 'montserrat', sans-serif;
+  --paragraph-font: 'montserrat', sans-serif;
   
-    --heading-font: 'montserrat', sans-serif;
-    --paragraph-font: 'montserrat', sans-serif;
-  
-    --nav-background-color: #71a9f7;
-    --nav-link-color: #0f7173;
-    --nav-hover-link-color: #d4f2d2;
-    --nav-hover-background-color: #fdfffc;
+  --nav-background-color: #71a9f7;
+  --nav-link-color: #0f7173;
+  --nav-hover-link-color: #d4f2d2;
+  --nav-hover-background-color: #fdfffc;
   }
       
 body {

@@ -27,11 +27,31 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+    width: auto;
+    min-width: fit-content;
   }
+
+header {
+  margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 350px 1fr 4fr;
+	align-items: center;
+  justify-content: space-around;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+header img {
+	margin: 0 0.25rem 0 1rem;
+	width: 100px;
+	height: auto;
+  padding-left: 70px;
+}
 
 nav {
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-around;
   }
 
 body {
@@ -39,6 +59,25 @@ body {
     max-width: 1000px;
     padding: 20px;
   }
+
+.history {
+  display: block;
+}
+
+.history img {
+  width: 200px;
+  height: auto;
+  float: left;
+  padding: 20px;
+}
+
+.adventure {
+  display: flex;
+}
+
+.adventure img{
+  width: 200px;
+}
 
 div {
     position: relative;

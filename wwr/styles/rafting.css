@@ -12,7 +12,12 @@
     --nav-hover-link-color: #d4f2d2;
     --nav-hover-background-color: #fdfffc;
   }
-
+  * {
+    padding: 0;
+    margin: 0 auto
+ }
+ 
+  
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -58,6 +63,9 @@ body {
     font-family: var(--paragraph-font);
     max-width: 1000px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
 .history {
@@ -72,11 +80,40 @@ body {
 }
 
 .adventure {
-  display: flex;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 80%;
+  justify-content: space-around;
+  width: fit-content;
+  height: fit-content;
+  max-width: 1000px;
 }
 
+.gridhead {
+  grid-column-start: 1;
+  grid-column-end: 6;
+ 
+}
+
+.fig1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  }
+.fig2 {
+  grid-column-start: 2;
+  grid-column-end: 3;}
+.fig3 {
+  grid-column-start: 3;
+  grid-column-end: 4;}
+.fig4 {
+  grid-column-start: 4;
+  grid-column-end: 5;}
+.fig5 {
+  grid-column-start: 5;
+  grid-column-end: 6;}
 .adventure img{
-  width: 200px;
+  width: 190px;
 }
 
 div {
@@ -114,3 +151,12 @@ div article {
     float: right;
 }
 
+footer {
+  display: flex;
+  background-color: #efefef;
+  margin-top: 50px;
+  width: 1000px;
+}
+footer a {
+  justify-content: flex-end;
+}

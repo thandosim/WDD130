@@ -3,7 +3,7 @@
    box-sizing: border-box;
 }
 
-header, .grid,  footer {
+header, footer, .grid {
   max-width: 840px;
   margin: 0 auto;
 }
@@ -28,7 +28,6 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    
   }
 
 h1 {

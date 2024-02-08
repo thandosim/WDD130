@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Exo+2&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+body {
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    color: #1b3270;
+    background: #bfc1d8af;
+  }
+
+
+header {
+    margin: 0 auto;
+    width: 840px;
+  }
+  
+h1 {
+    margin: 1rem;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+form {
+    width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(2, 3, 44, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+  }
+
+fieldset {
+    display: grid;
+    grid-gap: .3rem;
+    margin: 1rem;
+    border: 1px solid rgba(2, 3, 44, 0.2);
+    padding: 1rem;
+  }
+  
+legend {
+    padding: 0.5rem;
+    color: rgba(2, 3, 44);
+    font-size: 1.3em;
+  }
+  
+label, input, button, select, textarea {
+    font-family: 'Merriweather', Arial, sans-serif;
+  }
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+  }
+  
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+  }
+  
+button {
+    margin: 1rem;
+    background-color: rgba(2, 3, 44);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+  }
+  
+button:hover {
+    background-color: rgb(0, 72, 100);
+  }
+
+footer {
+    margin: 1rem auto 0;
+    width: 840px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #eaf1f1;
+    border-top: 1px solid #ccc;
+    background-color: rgba(2, 3, 44);
+  }
+
+
+.form-item {
+    display: grid;
+    align-items: center;
+  }
+  
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+  }
+  
+.column2 {
+    grid-template-columns: 1fr 2fr;
+  }

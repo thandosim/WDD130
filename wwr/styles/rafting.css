@@ -87,6 +87,7 @@ body {
   width: fit-content;
   height: fit-content;
   max-width: 1000px;
+  padding-top: 50px;
 }
 
 .gridhead {
@@ -129,7 +130,7 @@ div h1 {
     text-shadow: -1px 0 black, 0 1px white, 1px 0 black, 0 -1px black;
   }
 
-  .hero img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -146,9 +147,14 @@ div article {
   }
 
 .insert img {
+    padding-top: 3rem;
     width: 150px;
     height: auto;
     float: right;
+}
+.insert p {
+  padding-top: 3rem;
+  position: relative;
 }
 
 footer {
@@ -159,4 +165,131 @@ footer {
 }
 footer a {
   justify-content: flex-end;
+}
+
+
+form {
+  width: auto;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 14% 14% 14% 14% 14% 14% 14% ;
+  align-items: center;
+}
+.heading {
+display: flex;
+}
+
+
+fieldset {
+  display: grid;
+  margin: 1rem;
+  border: 1px solid rgba(2, 44, 5, 0.2);
+  padding: 1rem;
+  max-height: 100%;
+}
+
+legend {
+  padding: 0.5rem;
+  color: rgba(2, 44, 5);
+  font-size: 1.3em;
+}
+label, input, button, select, textarea {
+  font-family:var(--heading-font);
+}
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+button {
+  margin: 1rem;
+  background-color: rgba(2, 44, 5);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: rgb(0, 100, 17);
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+.column2 {
+  grid-row-start: 2;
+  grid-row-end: 3;  
+}
+
+.column1 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  align-self: start;
+}
+.f1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.f2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.f3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.f4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.f5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  height:fit-content;
+}
+.f6 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.f7 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
 }

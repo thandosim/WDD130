@@ -28,34 +28,42 @@
             <p>We love to hear from you. Send us your questions and feedback using the form below. we will respond as soon as possible.</p>
           </div>
           <fieldset class="form-item column2 f2">
+            <legend>Enter your full name.</legend>
               <div>
                 <label for="Full-name">Full name</label>
                 <input type="text" id="Full-name" name="Full-name" placeholder="type your full name here">
               </div>
           </fieldset>
           <fieldset class="form-item column2 f3">
+            <legend>Enter your email.</legend>
               <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="type your email address here">
               </div>
           </fieldset>
           <fieldset class="form-item column2 f4">
+            <legend>Select the purpose of your message.</legend>
               <div>
                 <label for="purpose">What is the purpose of your message?</label>
-                <select id="purpose" name="purpose">
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Reservation Question">Reservation Question</option>
-                    <option value="Website Suggestion">Website Suggestion</option>
-                </select>
+                <ul>
+                  <input type="radio" id="General Inquiry" name="purpose" value="General Inquiry">
+                  <label for="General Inquiry">General Inquiry</label><br>
+                  <input type="radio" id="Reservation Question" name="purpose" value="Reservation Question">
+                  <label for="Reservation Question">Reservation Question</label><br>
+                  <input type="radio" id="Website Suggestion" name="purpose" value="Website Suggestion">
+                  <label for="Website Suggestion">Website Suggestion</label>
+                </ul>
               </div>
           </fieldset>
           <fieldset class="form-item column2 f5">
+            <legend>Type your message.</legend>
               <div>
                 <label for="message">Type your message here.</label>
                 <textarea id="message" name="message" rows="6" placeholder="Type your message here."></textarea>
               </div>
           </fieldset>
           <fieldset class="form-item column2 f6">
+            <legend>Monthly newsletter.</legend>
               <div>
                 <label for="newsletter">Please subscribe me to the monthly newsletter.</label>
                 <input type="checkbox" id="newsletter" name="newsletter">

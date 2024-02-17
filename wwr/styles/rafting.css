@@ -10,11 +10,11 @@
     --nav-background-color: #71a9f7;
     --nav-link-color: #0f7173;
     --nav-hover-link-color: #d4f2d2;
-    --nav-hover-background-color: #fdfffc;
   }
   * {
     padding: 0;
     margin: 0 auto
+
  }
  
   
@@ -79,7 +79,67 @@ body {
   padding: 20px;
 }
 
+.adventure figure {
+  overflow: hidden;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 3s ease-in-out;
+}
+
+.adventure figure:hover {
+  overflow:visible;
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 1s ease-in-out;
+}
+
+#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin:0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  float: left;
+  /* height: 500px; */
+  width: 20%;
+}
+
+@keyframes slider {
+  0% {left:0;}
+  20% {left:0;}
+  25% {left:-100%;}
+  45% {left:-100%;}
+  50% {left:-200%;}
+  70% {left:-200%;}
+  75% {left:-300%;}
+  90% {left:-300%;}
+  100% {left:-400%;}
+}
+
+.pop{
+  display: block;
+  background-color:var(--nav-hover-link-color);
+  margin-bottom: auto;
+  clear: both;
+}
+
+.table {
+  margin-top: 1rem;
+}
+
+.callout{
+  display: block;
+  background-color:#71a9f786;
+ color:#033638;
+}
+
 .adventure {
+  clear: both;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 80%;
@@ -88,6 +148,9 @@ body {
   height: fit-content;
   max-width: 1000px;
   padding-top: 50px;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+
 }
 
 .gridhead {
@@ -136,6 +199,9 @@ div h1 {
     height: auto;
   }
   
+aside img {
+  width: 100%;
+}
 
 div article {
     position: absolute;

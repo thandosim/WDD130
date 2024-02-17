@@ -235,16 +235,18 @@ footer a {
 
 
 form {
+  overflow-x: hidden;
   width: auto;
   max-width: 1000px;
   height: auto;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 2.5rem;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 14% 14% 14% 14% 14% 14% 14% ;
   align-items: center;
+  justify-content:space-around;
 }
 .heading {
 display: flex;
